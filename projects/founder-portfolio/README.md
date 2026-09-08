@@ -31,6 +31,10 @@ npm run lint
 
 ## Deploy
 
-Pushes to `main` + `npx vercel --prod` redeploy. Run `vercel git connect` once to enable automatic deploys on every push.
+This repo is a multi-project workspace — the Next.js app lives in `projects/founder-portfolio/`, so:
+
+- **Vercel → Settings → General → Root Directory** must be `projects/founder-portfolio` (otherwise builds fail looking for `package.json` at the repo root).
+- CLI deploys: run `npx vercel --prod` from this folder (it's linked via `.vercel/project.json`).
+- Run `vercel git connect` once to enable automatic deploys on every push to `main`.
 
 > Note: Vercel enables Deployment Protection (SSO login wall) by default — turn it off under Project → Settings → Deployment Protection so the site is publicly reachable.
