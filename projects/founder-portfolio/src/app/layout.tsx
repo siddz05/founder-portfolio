@@ -23,20 +23,20 @@ const hand = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Siddharth Dwivedi — Founder building SaaS for millions",
+  title: "Signal Core Co. — stealth lab shipping autopilot software",
   description:
-    "Siddharth Dwivedi is a struggling founder building simple SaaS for millions. Read the story, follow the build, join the waitlist.",
+    "Signal Core Co. is a stealth startup lab turning everyday friction into autopilot software. Product 001 — Autopilot Ledger — is in build. Join the waitlist.",
   openGraph: {
-    title: "Siddharth Dwivedi — Founder building SaaS for millions",
+    title: "Signal Core Co. — stealth lab shipping autopilot software",
     description:
-      "No funding, no filter, just shipping. Follow the journey and join the waitlist.",
+      "We find friction. We ship autopilot. Autopilot Ledger in build, product 002 in discovery.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Siddharth Dwivedi — Founder building SaaS for millions",
+    title: "Signal Core Co. — stealth lab shipping autopilot software",
     description:
-      "No funding, no filter, just shipping. Follow the journey and join the waitlist.",
+      "We find friction. We ship autopilot. Autopilot Ledger in build, product 002 in discovery.",
   },
 };
 

@@ -20,8 +20,8 @@ export default function Navbar() {
       <div className="mx-auto max-w-6xl px-4 pt-4 sm:px-6">
         <nav className="flex items-center justify-between rounded-2xl border border-ink/10 bg-paper/80 px-4 py-3 shadow-xl shadow-ink/5 backdrop-blur-xl">
           <a href="#top" className="group flex items-center gap-2.5">
-            <span className="grid size-9 place-items-center rounded-xl bg-ember font-display text-lg font-bold text-white transition-transform group-hover:-rotate-6">
-              S
+            <span className="grid size-9 place-items-center rounded-xl bg-ember px-1 font-display text-sm font-bold text-white transition-transform group-hover:-rotate-6">
+              {site.mark}
             </span>
             <span className="hidden font-display text-sm font-semibold tracking-wide sm:block">
               {site.name}

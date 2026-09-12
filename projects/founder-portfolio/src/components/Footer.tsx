@@ -22,14 +22,14 @@ export default function Footer() {
                 Be first in line.
               </h2>
               <p className="mx-auto mt-4 max-w-md text-paper/70">
-                I&apos;m building for millions, starting with ten. Join the
-                waitlist and help shape what gets built.
+                We&apos;re building for millions, starting with a hundred.
+                Join the waitlist and shape what the lab ships.
               </p>
               <div className="mx-auto mt-8 max-w-md">
                 <WaitlistForm dark />
               </div>
               <p className="mt-5 font-hand text-2xl text-sun">
-                or just say hi, I reply fast ↓
+                or write to the lab, we reply fast ↓
               </p>
               <a
                 href={`mailto:${site.email}`}
@@ -61,8 +61,8 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 text-sm text-faded sm:flex-row">
           <p>
-            © {new Date().getFullYear()} {site.name} · built with chai, no
-            funding, zero hype
+            © {new Date().getFullYear()} {site.name} · stealth, chai,
+            shipped
           </p>
           <a
             href="#top"

@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import { story } from "@/data/portfolio";
+import { site, story } from "@/data/portfolio";
 
 export default function About() {
   return (
@@ -7,7 +7,7 @@ export default function About() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <p className="font-mono text-sm tracking-widest text-ember uppercase">
-            01 — The story
+            01 — Thesis
           </p>
           <h2 className="mt-3 max-w-2xl font-display text-4xl font-bold tracking-tight sm:text-5xl">
             {story.heading}
@@ -19,16 +19,14 @@ export default function About() {
             <div className="relative">
               <div className="grid aspect-square place-items-center overflow-hidden rounded-3xl border border-ink/10 bg-card shadow-xl shadow-ink/5">
                 <div className="text-center">
-                  <div className="mx-auto grid size-24 animate-wiggle place-items-center rounded-3xl bg-ink font-display text-4xl font-bold text-paper">
-                    SD
+                  <div className="mx-auto grid size-24 animate-wiggle place-items-center rounded-3xl bg-ink px-3 font-display text-3xl font-bold text-paper">
+                    {site.mark}
                   </div>
                   <p className="mt-4 font-hand text-2xl text-ember-deep">
-                    that&apos;s me, probably debugging
+                    logo loading… stay stealthy
                   </p>
                   <p className="mt-1 text-sm text-faded">
-                    your photo goes here
-                    <br />
-                    <span className="text-xs">drop avatar.png in /public</span>
+                    brand kit drops at launch
                   </p>
                 </div>
               </div>
@@ -64,7 +62,7 @@ export default function About() {
 
             <Reveal delay={0.3}>
               <p className="mt-6 font-hand text-2xl text-ember-deep">
-                currently figuring out →
+                inside the lab right now →
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {story.exploring.map((t) => (

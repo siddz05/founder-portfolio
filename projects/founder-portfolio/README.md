@@ -1,6 +1,6 @@
 # founder-portfolio
 
-Founder portfolio for Siddharth Dwivedi — a struggling founder building simple SaaS for millions. Warm paper + ember theme, butter-smooth animations, waitlist-first.
+Stealth startup lab site for **Signal Core Co.** — a lab turning everyday friction into autopilot software (Product 001: Autopilot Ledger). Warm paper + ember theme, butter-smooth animations, waitlist-first.
 
 ## Links
 

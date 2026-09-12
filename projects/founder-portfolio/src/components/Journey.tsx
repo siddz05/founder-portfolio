@@ -7,13 +7,13 @@ export default function Journey() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <Reveal>
           <p className="text-center font-mono text-sm tracking-widest text-ember uppercase">
-            03 — The journey
+            03 — Roadmap
           </p>
           <h2 className="mt-3 text-center font-display text-4xl font-bold tracking-tight sm:text-5xl">
-            How I got here.
+            Where this is going.
           </h2>
           <p className="mx-auto mt-3 max-w-md text-center font-hand text-2xl text-ember-deep">
-            the honest version, not the LinkedIn version
+            subject to reality (it always is)
           </p>
         </Reveal>
 

@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, FlaskConical } from "lucide-react";
+import { ArrowUpRight, Check, FlaskConical } from "lucide-react";
 import Reveal from "./Reveal";
 import WaitlistForm from "./WaitlistForm";
-import { experiments, flagship } from "@/data/portfolio";
+import { flagship, products, site } from "@/data/portfolio";
 
 export default function Projects() {
   return (
@@ -12,15 +12,15 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <p className="font-mono text-sm tracking-widest text-ember uppercase">
-            02 — What I&apos;m building
+            02 — Products
           </p>
           <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
             <h2 className="max-w-xl font-display text-4xl font-bold tracking-tight sm:text-5xl">
-              One mission, a few battle scars.
+              One lab, multiple shots on goal.
             </h2>
             <p className="max-w-sm text-faded">
-              The flagship is still in stealth — the experiments below are the
-              tuition I paid to find it.
+              Autopilot Ledger is in build. Everything else is discovery, the
+              vault — or your idea.
             </p>
           </div>
         </Reveal>
@@ -39,7 +39,7 @@ export default function Projects() {
                   {flagship.status}
                 </span>
                 <h3 className="mt-4 font-display text-3xl font-bold sm:text-4xl">
-                  {flagship.name} 🤫
+                  {flagship.name} 📒
                 </h3>
                 <p className="mt-2 font-hand text-2xl text-sun">
                   {flagship.oneliner}
@@ -71,26 +71,41 @@ export default function Projects() {
           </div>
         </Reveal>
 
-        {/* Experiments */}
+        {/* The rest of the lab */}
         <Reveal delay={0.15}>
           <p className="mt-14 flex items-center gap-2 font-hand text-3xl text-ember-deep">
-            <FlaskConical size={22} /> past experiments (a.k.a. tuition fees)
+            <FlaskConical size={22} /> the rest of the lab
           </p>
         </Reveal>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
-          {experiments.map((p, i) => (
+          {products.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.08}>
               <motion.article
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 300, damping: 22 }}
-                className="h-full rounded-3xl border border-ink/10 bg-card p-6 shadow-sm transition-shadow hover:shadow-lg hover:shadow-ink/5"
+                className="flex h-full flex-col rounded-3xl border border-ink/10 bg-card p-6 shadow-sm transition-shadow hover:shadow-lg hover:shadow-ink/5"
               >
-                <span className="text-4xl">{p.emoji}</span>
+                <div className="flex items-start justify-between gap-2">
+                  <span className="text-4xl">{p.emoji}</span>
+                  <span className="rounded-full bg-ink/5 px-3 py-1 font-mono text-[11px] font-semibold tracking-wide text-ember-deep uppercase">
+                    {p.status}
+                  </span>
+                </div>
                 <h3 className="mt-3 font-display text-lg font-bold">{p.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-faded">{p.desc}</p>
-                <p className="mt-4 rounded-xl bg-paper px-4 py-3 font-hand text-xl leading-snug text-ember-deep">
-                  {p.lesson}
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-faded">
+                  {p.desc}
                 </p>
+                <p className="mt-4 rounded-xl bg-paper px-4 py-3 font-hand text-xl leading-snug text-ember-deep">
+                  {p.note}
+                </p>
+                {p.cta && (
+                  <a
+                    href={`mailto:${site.email}?subject=${encodeURIComponent("My friction — a product idea for the lab")}`}
+                    className="mt-4 inline-flex items-center justify-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition-transform hover:scale-105"
+                  >
+                    Report your friction <ArrowUpRight size={16} />
+                  </a>
+                )}
               </motion.article>
             </Reveal>
           ))}

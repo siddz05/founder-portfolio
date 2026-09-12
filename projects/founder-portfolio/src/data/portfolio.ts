@@ -1,99 +1,115 @@
 export const site = {
-  name: "Siddharth Dwivedi",
-  role: "Founder & Builder",
+  name: "Signal Core Co.",
+  mark: "S\\",
+  role: "Stealth Startup Lab",
   tagline:
-    "A struggling founder building simple SaaS for millions — no funding, no filter, just shipping.",
-  location: "India · building for the world",
-  availability: "Building in stealth · waitlist open",
-  email: "hello@siddharth.dev",
+    "A stealth lab turning everyday friction into autopilot software. Two products in motion — zero pitch decks.",
+  location: "India · shipping worldwide",
+  availability: "In stealth · waitlist open",
+  email: "hello@signalcore.co",
   // TODO: replace with your real handles once ready
   socials: {
-    github: "https://github.com/your-handle",
-    linkedin: "https://linkedin.com/in/your-handle",
-    twitter: "https://x.com/your-handle",
+    github: "https://github.com/signal-core",
+    linkedin: "https://linkedin.com/company/signal-core",
+    twitter: "https://x.com/signalcore",
   },
 };
 
 export const missionStats = [
-  { value: "1", label: "SaaS in stealth" },
-  { value: "6+", label: "experiments shipped" },
-  { value: "1M+", label: "dream — people helped" },
+  { value: "02", label: "products in motion" },
+  { value: "01", label: "in build — Autopilot Ledger" },
+  { value: "01", label: "in discovery — finding friction" },
 ];
 
 export const principles = [
+  "Find friction",
+  "Kill busywork",
+  "Ship autopilot",
   "Talk to users",
-  "Ship v1 fast",
-  "Build in public",
-  "Stay humble",
-  "Solve real problems",
+  "Stay small",
   "No hype, just help",
-  "Embrace the struggle",
+  "Automate the boring",
   "Chai-powered",
 ];
 
 export const story = {
-  heading: "Struggling founder, stubborn mission.",
+  heading: "Busywork is the enemy.",
   bio: [
-    "Hey, I'm Siddharth. I'm not a funded startup with a fancy office — I'm one engineer with a laptop, a big problem I can't stop thinking about, and a stubborn belief that software should help millions, not just impress investors.",
-    "The struggle is real: long nights, failed experiments, running on savings and chai. But every failed side project taught me something, and every user conversation sharpens the mission. I'm documenting all of it in the open.",
+    "Signal Core Co. is a stealth startup lab with one obsession: the boring, repetitive work millions of people suffer through every day — and killing it with software.",
+    "We don't start with code. We start by living inside the friction — shadowing real workflows, counting wasted hours — and only then do we build. One product already runs on autopilot; the next is still taking shape inside the problem.",
   ],
   cards: [
     {
-      kicker: "the struggle",
-      emoji: "🥾",
-      title: "Starting from zero",
-      desc: "No funding, no team, no safety net. Just skills, savings, and an unreasonable amount of persistence.",
+      kicker: "find friction",
+      emoji: "🔍",
+      title: "Live inside the problem",
+      desc: "We embed in real workflows and measure the pain before writing a line of code. No friction, no product.",
     },
     {
-      kicker: "the insight",
-      emoji: "💡",
-      title: "A problem worth millions",
-      desc: "Talking to real users surfaced a painful, everyday problem. Small enough to start, big enough to matter at scale.",
+      kicker: "ship autopilot",
+      emoji: "🤖",
+      title: "Automate the boring",
+      desc: "If a human does it twice, software should do it forever. Our products take repetitive work to zero.",
     },
     {
-      kicker: "the mission",
-      emoji: "🚀",
-      title: "Simple SaaS, massive reach",
-      desc: "One product, dead simple, priced for everyone. Built to serve millions — starting with the first ten users.",
+      kicker: "launch often",
+      emoji: "📦",
+      title: "A lab, not a single bet",
+      desc: "Small team, multiple shots on goal. Every launch compounds — shared infra, shared learnings, one mission.",
     },
   ],
-  exploring: ["User interviews", "Landing tests", "Pricing experiments", "MVP scope", "Distribution"],
+  exploring: [
+    "Autopilot Ledger — build",
+    "Product 002 — discovery",
+    "User interviews",
+    "Pricing tests",
+    "Distribution",
+  ],
 };
 
 export const flagship = {
-  name: "Stealth SaaS",
-  // TODO: replace with your real product name + one-liner when ready
-  oneliner: "Something simple that solves a painful everyday problem.",
-  desc: "Currently in stealth while I validate with real users. The thesis: take a workflow millions suffer through, make it 10x simpler, price it for everyone. Private beta opening soon — waitlist members get in first and shape the roadmap.",
-  promises: ["Dead simple to use", "Priced for everyone", "Built with users, not for them"],
-  status: "Private beta soon",
+  name: "Autopilot Ledger",
+  oneliner: "Your books, kept by themselves.",
+  desc: "Product 001. Bookkeeping that runs on autopilot — transactions categorized, records reconciled, reports ready without lifting a finger. In build with a tiny circle of early users. Waitlist members enter the private beta first and shape the roadmap.",
+  promises: [
+    "Zero-entry bookkeeping",
+    "Always reconciled",
+    "Reports on autopilot",
+  ],
+  status: "In build · private beta soon",
 };
 
-export type Experiment = {
+export type Product = {
   title: string;
+  status: string;
   desc: string;
-  lesson: string;
+  note: string;
   emoji: string;
+  cta?: boolean;
 };
 
-export const experiments: Experiment[] = [
+export const products: Product[] = [
   {
-    title: "Pulseboard",
-    desc: "Multi-tenant analytics dashboard with realtime charts and Stripe billing.",
-    lesson: "Lesson: great tech, nobody asked for it. Talk to users first.",
-    emoji: "📊",
+    title: "Product 002 — codename Friction",
+    status: "Finding friction",
+    desc: "We're inside the problem: interviewing operators, shadowing workflows, measuring wasted hours. The product hasn't emerged yet — that's the point.",
+    note: "no code until the pain is proven",
+    emoji: "🧭",
   },
   {
-    title: "Cartly",
-    desc: "Headless storefront, 95+ Lighthouse, SEO-ready. Technically sweet.",
-    lesson: "Lesson: crowded market, no edge. Distribution beats code.",
-    emoji: "🛒",
+    title: "Product 003",
+    status: "Locked",
+    desc: "Sealed in the vault until 001 and 002 are flying. A lab always keeps one idea under wraps.",
+    note: "declassifies after launch 002",
+    emoji: "🔒",
   },
   {
-    title: "JotAI",
-    desc: "Markdown notes with semantic search + summarization.",
-    lesson: "Lesson: closest to real pain — this one pointed at the mission.",
-    emoji: "✨",
+    title: "Your workflow?",
+    status: "Tell us",
+    desc: "Drowning in repetitive work? Describe where it hurts — real friction from real operators is our favorite roadmap input.",
+    note: "your pain could become product 004",
+    emoji: "💬",
+    cta: true,
   },
 ];
 
@@ -105,35 +121,30 @@ export type JourneyStep = {
 
 export const journey: JourneyStep[] = [
   {
-    date: "Then",
-    title: "Engineer shipping for others",
-    desc: "Years building full-stack apps — React, Node, Postgres. Learned how software gets made, and how often it misses the point.",
-  },
-  {
-    date: "Later",
-    title: "Side projects, honest failures",
-    desc: "Shipped dashboards, storefronts, AI toys. Most flopped. Each one taught me what not to build — the most valuable curriculum there is.",
-  },
-  {
-    date: "The turn",
-    title: "Talked to users, found the pain",
-    desc: "Stopped building in a cave. Started listening. One painful, everyday problem kept coming up — small enough to start, big enough for millions.",
-  },
-  {
     date: "Now",
-    title: "Building the SaaS in stealth",
-    desc: "Heads down on the MVP with a tiny circle of early users. Validating, iterating, documenting in the open. Savings + chai.",
+    title: "Autopilot Ledger in build",
+    desc: "Core autopilot engine plus a tiny early-user circle. Weekly ships, tight feedback loops, zero ceremony.",
   },
   {
     date: "Next",
-    title: "Private beta → public launch",
-    desc: "Waitlist opens the door. First ten users shape the product, then we scale to thousands, then millions. One step, honestly taken, at a time.",
+    title: "Private beta",
+    desc: "The waitlist opens the door. The first hundred users stress-test the autopilot in the wild.",
+  },
+  {
+    date: "Then",
+    title: "Product 002 takes shape",
+    desc: "Discovery hardens into a build. Friction findings become our second launch.",
+  },
+  {
+    date: "Later",
+    title: "The autopilot suite",
+    desc: "A family of products sharing one mission: zero busywork. Public launch first — then scale to millions.",
   },
 ];
 
 export const navLinks = [
-  { label: "Story", href: "#story" },
-  { label: "Building", href: "#building" },
-  { label: "Journey", href: "#journey" },
+  { label: "Thesis", href: "#story" },
+  { label: "Products", href: "#building" },
+  { label: "Roadmap", href: "#journey" },
   { label: "Contact", href: "#contact" },
 ];

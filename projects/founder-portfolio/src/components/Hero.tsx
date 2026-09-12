@@ -43,21 +43,23 @@ export default function Hero() {
           transition={{ duration: 0.6, ease }}
           className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-ink/10 bg-card py-1.5 pr-4 pl-1.5 text-sm shadow-sm"
         >
-          <span className="flex items-center gap-1.5 rounded-full bg-ember px-2.5 py-1 text-xs font-semibold text-white">
-            <span className="size-1.5 animate-pulse-dot rounded-full bg-white" />
-            Stealth mode
+          <span className="flex items-center gap-1.5 rounded-full bg-ink px-2.5 py-1 font-mono text-xs font-semibold text-paper">
+            SIGNAL\CORE
           </span>
-          <span className="text-faded">{site.availability}</span>
+          <span className="flex items-center gap-1.5 text-faded">
+            <span className="size-1.5 animate-pulse-dot rounded-full bg-ember" />
+            {site.availability}
+          </span>
         </motion.div>
 
         <h1 className="font-display text-5xl leading-[1.02] font-bold tracking-tight sm:text-7xl lg:text-8xl">
-          <Words text="Struggling today," delay={0.1} />
+          <Words text="We find friction." delay={0.1} />
           <br />
           <span className="text-faded">
-            <Words text="building for" delay={0.35} />
+            <Words text="We ship" delay={0.35} />
           </span>{" "}
           <span className="text-ember">
-            <Words text="millions tomorrow." delay={0.55} />
+            <Words text="autopilot." delay={0.5} />
           </span>
         </h1>
 
@@ -67,7 +69,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.9, ease }}
           className="mt-5 font-hand text-2xl text-ember-deep sm:text-3xl"
         >
-          ↑ yes, really struggling — no filter here. I&apos;m {site.name.split(" ")[0]}.
+          ↑ no pitch decks, just products. this is {site.name}
         </motion.p>
 
         <motion.p
@@ -76,7 +78,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7, ease }}
           className="mt-4 max-w-xl text-lg leading-relaxed text-faded"
         >
-          {site.tagline}
+          {site.tagline} Product 001 — Autopilot Ledger — is in build. Product
+          002 is still inside the problem, where it belongs.
         </motion.p>
 
         <motion.div
@@ -94,12 +97,12 @@ export default function Hero() {
             Join the waitlist <ArrowDown size={18} />
           </motion.a>
           <motion.a
-            href="#story"
+            href="#building"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
             className="inline-flex items-center gap-2 rounded-full border border-ink/15 bg-card px-7 py-3.5 font-semibold text-ink transition-colors hover:bg-ink/5"
           >
-            Read my story <ArrowUpRight size={18} />
+            See the products <ArrowUpRight size={18} />
           </motion.a>
           <span className="ml-1 inline-flex items-center gap-1.5 text-sm text-faded">
             <MapPin size={15} /> {site.location}
@@ -110,7 +113,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.05 }}
-          className="mt-14 grid max-w-lg grid-cols-3 gap-6 border-t border-ink/10 pt-7"
+          className="mt-14 grid max-w-xl grid-cols-3 gap-6 border-t border-ink/10 pt-7"
         >
           {missionStats.map((s) => (
             <div key={s.label}>
