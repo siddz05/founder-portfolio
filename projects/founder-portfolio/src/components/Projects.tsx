@@ -57,6 +57,22 @@ export default function Projects() {
                     </li>
                   ))}
                 </ul>
+                <div className="mt-7 flex flex-wrap gap-3">
+                  <a
+                    href={flagship.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-ember/30 transition-transform hover:scale-105 active:scale-95"
+                  >
+                    Try the live alpha <ArrowUpRight size={16} />
+                  </a>
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center gap-2 rounded-full border border-paper/25 px-6 py-3 text-sm font-semibold text-paper transition-colors hover:bg-paper/10"
+                  >
+                    Join the waitlist
+                  </a>
+                </div>
               </div>
               <div className="rounded-2xl border border-paper/15 bg-paper/5 p-6">
                 <p className="font-display font-semibold">

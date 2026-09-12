@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
-import { missionStats, site } from "@/data/portfolio";
+import { flagship, missionStats, site } from "@/data/portfolio";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -78,8 +78,16 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7, ease }}
           className="mt-4 max-w-xl text-lg leading-relaxed text-faded"
         >
-          {site.tagline} Product 001 — Autopilot Ledger — is in build. Product
-          002 is still inside the problem, where it belongs.
+          {site.tagline} Product 001 — Autopilot Ledger —{" "}
+          <a
+            href={flagship.live}
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold text-ink underline decoration-ember decoration-2 underline-offset-4 transition-colors hover:text-ember-deep"
+          >
+            is live in alpha, try it ↗
+          </a>
+          . Product 002 is still inside the problem, where it belongs.
         </motion.p>
 
         <motion.div

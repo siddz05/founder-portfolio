@@ -1,6 +1,7 @@
 import { ArrowUpRight, Mail } from "lucide-react";
 import Reveal from "./Reveal";
 import WaitlistForm from "./WaitlistForm";
+import Logo from "./Logo";
 import { GithubIcon, LinkedinIcon, XIcon } from "./icons";
 import { site } from "@/data/portfolio";
 
@@ -60,9 +61,9 @@ export default function Footer() {
         </Reveal>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 text-sm text-faded sm:flex-row">
-          <p>
-            © {new Date().getFullYear()} {site.name} · stealth, chai,
-            shipped
+          <p className="inline-flex items-center gap-2">
+            <Logo size={18} className="rounded-md" />© {new Date().getFullYear()}{" "}
+            {site.name} · stealth, chai, shipped
           </p>
           <a
             href="#top"

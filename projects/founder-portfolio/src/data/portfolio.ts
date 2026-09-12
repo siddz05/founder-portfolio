@@ -1,6 +1,5 @@
 export const site = {
   name: "Signal Core Co.",
-  mark: "S\\",
   role: "Stealth Startup Lab",
   tagline:
     "A stealth lab turning everyday friction into autopilot software. Two products in motion — zero pitch decks.",
@@ -17,7 +16,7 @@ export const site = {
 
 export const missionStats = [
   { value: "02", label: "products in motion" },
-  { value: "01", label: "in build — Autopilot Ledger" },
+  { value: "01", label: "live in alpha — Autopilot Ledger" },
   { value: "01", label: "in discovery — finding friction" },
 ];
 
@@ -59,7 +58,7 @@ export const story = {
     },
   ],
   exploring: [
-    "Autopilot Ledger — build",
+    "Autopilot Ledger — alpha live",
     "Product 002 — discovery",
     "User interviews",
     "Pricing tests",
@@ -69,14 +68,15 @@ export const story = {
 
 export const flagship = {
   name: "Autopilot Ledger",
-  oneliner: "Your books, kept by themselves.",
-  desc: "Product 001. Bookkeeping that runs on autopilot — transactions categorized, records reconciled, reports ready without lifting a finger. In build with a tiny circle of early users. Waitlist members enter the private beta first and shape the roadmap.",
+  oneliner: "Your money, auto-logged. Nothing else touched.",
+  desc: "Product 001 — now live in alpha (v1.3). A private expense tracker that quietly turns the receipts you already receive into a personal ledger. It learns your patterns in about 3 days, aiming for 95% auto-logged accuracy with 80% fewer manual touches. Read-only receipt access, no bank passwords, no money movement — revoke anytime.",
   promises: [
-    "Zero-entry bookkeeping",
-    "Always reconciled",
-    "Reports on autopilot",
+    "95% auto-logged accuracy",
+    "Read-only access — no money movement",
+    "Private by design, revoke anytime",
   ],
-  status: "In build · private beta soon",
+  status: "Alpha live · v1.3",
+  live: "https://autopilot-ledger-omega.vercel.app/",
 };
 
 export type Product = {
@@ -122,8 +122,8 @@ export type JourneyStep = {
 export const journey: JourneyStep[] = [
   {
     date: "Now",
-    title: "Autopilot Ledger in build",
-    desc: "Core autopilot engine plus a tiny early-user circle. Weekly ships, tight feedback loops, zero ceremony.",
+    title: "Autopilot Ledger alpha is live",
+    desc: "v1.3 in the wild with early users — receipts in, ledger out, learning every day. Private beta is next.",
   },
   {
     date: "Next",

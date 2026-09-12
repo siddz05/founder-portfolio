@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
+import Logo from "./Logo";
 import { navLinks, site } from "@/data/portfolio";
 
 export default function Navbar() {
@@ -20,9 +21,10 @@ export default function Navbar() {
       <div className="mx-auto max-w-6xl px-4 pt-4 sm:px-6">
         <nav className="flex items-center justify-between rounded-2xl border border-ink/10 bg-paper/80 px-4 py-3 shadow-xl shadow-ink/5 backdrop-blur-xl">
           <a href="#top" className="group flex items-center gap-2.5">
-            <span className="grid size-9 place-items-center rounded-xl bg-ember px-1 font-display text-sm font-bold text-white transition-transform group-hover:-rotate-6">
-              {site.mark}
-            </span>
+            <Logo
+              size={36}
+              className="rounded-xl transition-transform group-hover:-rotate-6"
+            />
             <span className="hidden font-display text-sm font-semibold tracking-wide sm:block">
               {site.name}
               <span className="block text-xs font-normal text-faded">

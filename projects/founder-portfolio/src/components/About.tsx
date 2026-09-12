@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
-import { site, story } from "@/data/portfolio";
+import Logo from "./Logo";
+import { story } from "@/data/portfolio";
 
 export default function About() {
   return (
@@ -19,11 +20,9 @@ export default function About() {
             <div className="relative">
               <div className="grid aspect-square place-items-center overflow-hidden rounded-3xl border border-ink/10 bg-card shadow-xl shadow-ink/5">
                 <div className="text-center">
-                  <div className="mx-auto grid size-24 animate-wiggle place-items-center rounded-3xl bg-ink px-3 font-display text-3xl font-bold text-paper">
-                    {site.mark}
-                  </div>
+                  <Logo size={96} className="mx-auto animate-wiggle" />
                   <p className="mt-4 font-hand text-2xl text-ember-deep">
-                    logo loading… stay stealthy
+                    fresh out of the lab
                   </p>
                   <p className="mt-1 text-sm text-faded">
                     brand kit drops at launch
