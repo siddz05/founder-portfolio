@@ -1,4 +1,4 @@
-// Signal Core Co. mark — a signal radiating from its core.
+// Signal Core mark — a signal radiating from its core.
 // Ink tile, paper core dot, ember broadcast arcs.
 export default function Logo({
   size = 36,
@@ -13,7 +13,7 @@ export default function Logo({
       height={size}
       viewBox="0 0 48 48"
       role="img"
-      aria-label="Signal Core Co. logo"
+      aria-label="Signal Core logo"
       className={className}
     >
       <rect width="48" height="48" rx="12" fill="#1C1917" />

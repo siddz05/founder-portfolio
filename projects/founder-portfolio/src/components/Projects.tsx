@@ -19,8 +19,8 @@ export default function Projects() {
               One lab, multiple shots on goal.
             </h2>
             <p className="max-w-sm text-faded">
-              Autopilot Ledger is in build. Everything else is discovery, the
-              vault — or your idea.
+              slowSKY is live and Autopilot Ledger is in alpha. Everything
+              else is discovery, the vault — or your idea.
             </p>
           </div>
         </Reveal>
@@ -93,7 +93,7 @@ export default function Projects() {
             <FlaskConical size={22} /> the rest of the lab
           </p>
         </Reveal>
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {products.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.08}>
               <motion.article
@@ -114,6 +114,16 @@ export default function Projects() {
                 <p className="mt-4 rounded-xl bg-paper px-4 py-3 font-hand text-xl leading-snug text-ember-deep">
                   {p.note}
                 </p>
+                {p.link && (
+                  <a
+                    href={p.link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-4 inline-flex items-center justify-center gap-1.5 rounded-full bg-ember px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105"
+                  >
+                    {p.link.label} <ArrowUpRight size={16} />
+                  </a>
+                )}
                 {p.cta && (
                   <a
                     href={`mailto:${site.email}?subject=${encodeURIComponent("My friction — a product idea for the lab")}`}

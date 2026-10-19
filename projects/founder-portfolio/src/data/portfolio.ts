@@ -1,11 +1,11 @@
 export const site = {
-  name: "Signal Core Co.",
+  name: "Signal Core",
   role: "Stealth Startup Lab",
   tagline:
     "A stealth lab turning everyday friction into autopilot software. Two products in motion — zero pitch decks.",
   location: "India · shipping worldwide",
   availability: "In stealth · waitlist open",
-  email: "hello@signalcore.co",
+  email: "support@slowsky.app",
   // TODO: replace with your real handles once ready
   socials: {
     github: "https://github.com/signal-core",
@@ -15,8 +15,8 @@ export const site = {
 };
 
 export const missionStats = [
-  { value: "02", label: "products in motion" },
-  { value: "01", label: "live in alpha — Autopilot Ledger" },
+  { value: "03", label: "products in motion" },
+  { value: "02", label: "live — slowSKY & Autopilot Ledger" },
   { value: "01", label: "in discovery — finding friction" },
 ];
 
@@ -34,7 +34,7 @@ export const principles = [
 export const story = {
   heading: "Busywork is the enemy.",
   bio: [
-    "Signal Core Co. is a stealth startup lab with one obsession: the boring, repetitive work millions of people suffer through every day — and killing it with software.",
+    "Signal Core is a stealth startup lab with one obsession: the boring, repetitive work millions of people suffer through every day — and killing it with software.",
     "We don't start with code. We start by living inside the friction — shadowing real workflows, counting wasted hours — and only then do we build. One product already runs on autopilot; the next is still taking shape inside the problem.",
   ],
   cards: [
@@ -58,6 +58,7 @@ export const story = {
     },
   ],
   exploring: [
+    "slowSKY — live on Android",
     "Autopilot Ledger — alpha live",
     "Product 002 — discovery",
     "User interviews",
@@ -71,7 +72,7 @@ export const flagship = {
   oneliner: "Your money, auto-logged. Nothing else touched.",
   desc: "Product 001 — now live in alpha (v1.3). A private expense tracker that quietly turns the receipts you already receive into a personal ledger. It learns your patterns in about 3 days, aiming for 95% auto-logged accuracy with 80% fewer manual touches. Read-only receipt access, no bank passwords, no money movement — revoke anytime.",
   promises: [
-    "95% auto-logged accuracy",
+    "Targeting 95% auto-logged accuracy",
     "Read-only access — no money movement",
     "Private by design, revoke anytime",
   ],
@@ -86,9 +87,18 @@ export type Product = {
   note: string;
   emoji: string;
   cta?: boolean;
+  link?: { label: string; href: string };
 };
 
 export const products: Product[] = [
+  {
+    title: "slowSKY",
+    status: "Live · Android",
+    desc: "A chat community where you meet, play and rise: live rooms for countries and topics, private chats, room games and gifts. Built for good conversations, with moderation and safety at its core.",
+    note: "meet · play · rise",
+    emoji: "☁️",
+    link: { label: "Visit slowSKY", href: "https://slowsky.app" },
+  },
   {
     title: "Product 002 — codename Friction",
     status: "Finding friction",
