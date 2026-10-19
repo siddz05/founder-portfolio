@@ -23,18 +23,18 @@ const hand = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Signal Core Co. — stealth lab shipping autopilot software",
+  title: "Signal Core — stealth lab shipping autopilot software",
   description:
-    "Signal Core Co. is a stealth startup lab turning everyday friction into autopilot software. Product 001 — Autopilot Ledger — is in build. Join the waitlist.",
+    "Signal Core is a stealth startup lab turning everyday friction into autopilot software. Product 001 — Autopilot Ledger — is in build. Join the waitlist.",
   openGraph: {
-    title: "Signal Core Co. — stealth lab shipping autopilot software",
+    title: "Signal Core — stealth lab shipping autopilot software",
     description:
       "We find friction. We ship autopilot. Autopilot Ledger in build, product 002 in discovery.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Signal Core Co. — stealth lab shipping autopilot software",
+    title: "Signal Core — stealth lab shipping autopilot software",
     description:
       "We find friction. We ship autopilot. Autopilot Ledger in build, product 002 in discovery.",
   },
