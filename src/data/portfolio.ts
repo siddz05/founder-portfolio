@@ -1,17 +1,11 @@
 export const site = {
-  name: "Signal Core",
+  name: "Signal Core Studios",
   role: "Stealth Startup Lab",
   tagline:
-    "A stealth lab turning everyday friction into autopilot software. Two products in motion — zero pitch decks.",
+    "A stealth lab building small, calm software for everyday life — less friction, more connection. Three products in motion — zero pitch decks.",
   location: "India · shipping worldwide",
-  availability: "In stealth · waitlist open",
-  email: "support@slowsky.app",
-  // TODO: replace with your real handles once ready
-  socials: {
-    github: "https://github.com/signal-core",
-    linkedin: "https://linkedin.com/company/signal-core",
-    twitter: "https://x.com/signalcore",
-  },
+  availability: "In stealth · say hi",
+  email: "support@signalcorestudios.com",
 };
 
 export const missionStats = [
@@ -22,19 +16,19 @@ export const missionStats = [
 
 export const principles = [
   "Find friction",
-  "Kill busywork",
-  "Ship autopilot",
+  "Less friction",
+  "More connection",
   "Talk to users",
   "Stay small",
   "No hype, just help",
-  "Automate the boring",
+  "Make it calm",
   "Chai-powered",
 ];
 
 export const story = {
-  heading: "Busywork is the enemy.",
+  heading: "Friction is the enemy.",
   bio: [
-    "Signal Core is a stealth startup lab with one obsession: the boring, repetitive work millions of people suffer through every day — and killing it with software.",
+    "Signal Core Studios is a stealth startup lab with one obsession: the everyday friction millions of people put up with — and removing it with small, calm software.",
     "We don't start with code. We start by living inside the friction — shadowing real workflows, counting wasted hours — and only then do we build. One product already runs on autopilot; the next is still taking shape inside the problem.",
   ],
   cards: [
@@ -68,16 +62,18 @@ export const story = {
 };
 
 export const flagship = {
-  name: "Autopilot Ledger",
-  oneliner: "Your money, auto-logged. Nothing else touched.",
-  desc: "Product 001 — now live in alpha (v1.3). A private expense tracker that quietly turns the receipts you already receive into a personal ledger. It learns your patterns in about 3 days, aiming for 95% auto-logged accuracy with 80% fewer manual touches. Read-only receipt access, no bank passwords, no money movement — revoke anytime.",
+  name: "slowSKY",
+  logo: "/logos/slowsky-symbol.svg",
+  oneliner: "Meet, play and rise.",
+  desc: "Product 001 — live on Android. A chat community where you meet, play and rise: live rooms for countries and topics, private chats, room games and gifts. Built for good conversations, with moderation and safety at its core.",
   promises: [
-    "Targeting 95% auto-logged accuracy",
-    "Read-only access — no money movement",
-    "Private by design, revoke anytime",
+    "Live rooms for countries and topics",
+    "Room games like LowCard and Dice",
+    "Moderation and safety at its core",
   ],
-  status: "Alpha live · v1.3",
-  live: "https://autopilot-ledger-omega.vercel.app/",
+  status: "Live · Android",
+  live: "https://slowsky.app",
+  cta: "Visit slowSKY",
 };
 
 export type Product = {
@@ -86,38 +82,41 @@ export type Product = {
   desc: string;
   note: string;
   emoji: string;
+  /** An image shown in place of the emoji, e.g. the product's own logo */
+  logo?: string;
   cta?: boolean;
   link?: { label: string; href: string };
 };
 
 export const products: Product[] = [
   {
-    title: "slowSKY",
-    status: "Live · Android",
-    desc: "A chat community where you meet, play and rise: live rooms for countries and topics, private chats, room games and gifts. Built for good conversations, with moderation and safety at its core.",
-    note: "meet · play · rise",
-    emoji: "☁️",
-    link: { label: "Visit slowSKY", href: "https://slowsky.app" },
+    title: "Sit With",
+    status: "In stealth",
+    desc: "Your practice and the group's, overlapping.",
+    note: "in stealth",
+    emoji: "⭕",
+    logo: "/logos/sitwith-symbol.svg",
   },
   {
-    title: "Product 002 — codename Friction",
+    title: "Autopilot Ledger",
+    status: "Alpha live · v1.3",
+    desc: "A private expense tracker that quietly turns the receipts you already receive into a personal ledger. Read-only receipt access, no bank passwords, no money movement — revoke anytime.",
+    note: "receipts in, ledger out",
+    emoji: "📒",
+    link: { label: "Try the live alpha", href: "https://autopilot-ledger-omega.vercel.app/" },
+  },
+  {
+    title: "Next — codename Friction",
     status: "Finding friction",
     desc: "We're inside the problem: interviewing operators, shadowing workflows, measuring wasted hours. The product hasn't emerged yet — that's the point.",
     note: "no code until the pain is proven",
     emoji: "🧭",
   },
   {
-    title: "Product 003",
-    status: "Locked",
-    desc: "Sealed in the vault until 001 and 002 are flying. A lab always keeps one idea under wraps.",
-    note: "declassifies after launch 002",
-    emoji: "🔒",
-  },
-  {
     title: "Your workflow?",
     status: "Tell us",
     desc: "Drowning in repetitive work? Describe where it hurts — real friction from real operators is our favorite roadmap input.",
-    note: "your pain could become product 004",
+    note: "your pain could become our next product",
     emoji: "💬",
     cta: true,
   },
@@ -132,23 +131,23 @@ export type JourneyStep = {
 export const journey: JourneyStep[] = [
   {
     date: "Now",
-    title: "Autopilot Ledger alpha is live",
-    desc: "v1.3 in the wild with early users — receipts in, ledger out, learning every day. Private beta is next.",
+    title: "slowSKY is live on Android",
+    desc: "Rooms, games and gifts in the hands of real users, with the APK on slowsky.app.",
   },
   {
     date: "Next",
-    title: "Private beta",
-    desc: "The waitlist opens the door. The first hundred users stress-test the autopilot in the wild.",
+    title: "slowSKY on Google Play",
+    desc: "Closed testing with our first testers, then the public Play Store launch.",
   },
   {
     date: "Then",
-    title: "Product 002 takes shape",
-    desc: "Discovery hardens into a build. Friction findings become our second launch.",
+    title: "Sit With comes out of stealth",
+    desc: "A small, shared space for your practice and the group's.",
   },
   {
     date: "Later",
-    title: "The autopilot suite",
-    desc: "A family of products sharing one mission: zero busywork. Public launch first — then scale to millions.",
+    title: "Autopilot Ledger beta",
+    desc: "The alpha grows into a private beta, then a public launch.",
   },
 ];
 

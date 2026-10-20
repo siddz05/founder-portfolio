@@ -13,7 +13,7 @@ export default function Logo({
       height={size}
       viewBox="0 0 48 48"
       role="img"
-      aria-label="Signal Core logo"
+      aria-label="Signal Core Studios logo"
       className={className}
     >
       <rect width="48" height="48" rx="12" fill="#1C1917" />
