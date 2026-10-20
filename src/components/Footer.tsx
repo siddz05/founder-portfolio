@@ -1,8 +1,6 @@
 import { ArrowUpRight, Mail } from "lucide-react";
 import Reveal from "./Reveal";
-import WaitlistForm from "./WaitlistForm";
 import Logo from "./Logo";
-import { GithubIcon, LinkedinIcon, XIcon } from "./icons";
 import { site } from "@/data/portfolio";
 
 export default function Footer() {
@@ -24,13 +22,10 @@ export default function Footer() {
               </h2>
               <p className="mx-auto mt-4 max-w-md text-paper/70">
                 We&apos;re building for millions, starting with a hundred.
-                Join the waitlist and shape what the lab ships.
+                Write to us and shape what the lab ships.
               </p>
-              <div className="mx-auto mt-8 max-w-md">
-                <WaitlistForm dark />
-              </div>
               <p className="mt-5 font-hand text-2xl text-sun">
-                or write to the lab, we reply fast ↓
+                write to the lab, we reply fast ↓
               </p>
               <a
                 href={`mailto:${site.email}`}
@@ -38,24 +33,6 @@ export default function Footer() {
               >
                 <Mail size={18} /> {site.email}
               </a>
-              <div className="mt-7 flex items-center justify-center gap-2">
-                {[
-                  { icon: GithubIcon, href: site.socials.github, label: "GitHub" },
-                  { icon: LinkedinIcon, href: site.socials.linkedin, label: "LinkedIn" },
-                  { icon: XIcon, href: site.socials.twitter, label: "X" },
-                ].map(({ icon: Icon, href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={label}
-                    className="rounded-full border border-paper/15 bg-paper/5 p-3 text-paper/70 transition-colors hover:border-ember hover:text-paper"
-                  >
-                    <Icon size={18} />
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
         </Reveal>

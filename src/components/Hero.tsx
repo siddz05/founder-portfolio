@@ -59,7 +59,7 @@ export default function Hero() {
             <Words text="We ship" delay={0.35} />
           </span>{" "}
           <span className="text-ember">
-            <Words text="autopilot." delay={0.5} />
+            <Words text="calm." delay={0.5} />
           </span>
         </h1>
 
@@ -78,16 +78,16 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7, ease }}
           className="mt-4 max-w-xl text-lg leading-relaxed text-faded"
         >
-          {site.tagline} Product 001 — Autopilot Ledger —{" "}
+          {site.tagline} Product 001 — slowSKY —{" "}
           <a
             href={flagship.live}
             target="_blank"
             rel="noreferrer"
             className="font-semibold text-ink underline decoration-ember decoration-2 underline-offset-4 transition-colors hover:text-ember-deep"
           >
-            is live in alpha, try it ↗
+            is live on Android, try it ↗
           </a>
-          . Product 002 is still inside the problem, where it belongs.
+          . Sit With is in stealth, and Autopilot Ledger is in alpha.
         </motion.p>
 
         <motion.div
@@ -102,7 +102,7 @@ export default function Hero() {
             whileTap={{ scale: 0.96 }}
             className="inline-flex items-center gap-2 rounded-full bg-ink px-7 py-3.5 font-semibold text-paper shadow-lg shadow-ink/20"
           >
-            Join the waitlist <ArrowDown size={18} />
+            Write to the lab <ArrowDown size={18} />
           </motion.a>
           <motion.a
             href="#building"

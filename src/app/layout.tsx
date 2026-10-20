@@ -22,22 +22,17 @@ const hand = Caveat({
   display: "swap",
 });
 
+const title = "Signal Core Studios — small, calm software for everyday life";
+const description =
+  "Signal Core Studios is a stealth startup lab from India. slowSKY is live on Android, Sit With is in stealth and Autopilot Ledger is in alpha.";
+
 export const metadata: Metadata = {
-  title: "Signal Core — stealth lab shipping autopilot software",
-  description:
-    "Signal Core is a stealth startup lab turning everyday friction into autopilot software. Product 001 — Autopilot Ledger — is in build. Join the waitlist.",
-  openGraph: {
-    title: "Signal Core — stealth lab shipping autopilot software",
-    description:
-      "We find friction. We ship autopilot. Autopilot Ledger in build, product 002 in discovery.",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Signal Core — stealth lab shipping autopilot software",
-    description:
-      "We find friction. We ship autopilot. Autopilot Ledger in build, product 002 in discovery.",
-  },
+  // Absolute URLs for link previews and the share image
+  metadataBase: new URL("https://signalcorestudios.com"),
+  title,
+  description,
+  openGraph: { title, description, type: "website", url: "/" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function RootLayout({

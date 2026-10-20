@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Check, FlaskConical } from "lucide-react";
 import Reveal from "./Reveal";
-import WaitlistForm from "./WaitlistForm";
 import { flagship, products, site } from "@/data/portfolio";
 
 export default function Projects() {
@@ -19,8 +18,8 @@ export default function Projects() {
               One lab, multiple shots on goal.
             </h2>
             <p className="max-w-sm text-faded">
-              slowSKY is live and Autopilot Ledger is in alpha. Everything
-              else is discovery, the vault — or your idea.
+              slowSKY is live, Sit With is in stealth and Autopilot Ledger is
+              in alpha. Everything else is discovery — or your idea.
             </p>
           </div>
         </Reveal>
@@ -38,8 +37,10 @@ export default function Projects() {
                   <span className="size-1.5 animate-pulse-dot rounded-full bg-white" />
                   {flagship.status}
                 </span>
-                <h3 className="mt-4 font-display text-3xl font-bold sm:text-4xl">
-                  {flagship.name} 📒
+                <h3 className="mt-4 flex items-center gap-3 font-display text-3xl font-bold sm:text-4xl">
+                  {/* eslint-disable-next-line @next/next/no-img-element -- a small static SVG needs no optimisation */}
+                  <img src={flagship.logo} alt="" width={44} height={44} className="h-11 w-11" />
+                  {flagship.name}
                 </h3>
                 <p className="mt-2 font-hand text-2xl text-sun">
                   {flagship.oneliner}
@@ -64,24 +65,15 @@ export default function Projects() {
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-ember/30 transition-transform hover:scale-105 active:scale-95"
                   >
-                    Try the live alpha <ArrowUpRight size={16} />
+                    {flagship.cta} <ArrowUpRight size={16} />
                   </a>
                   <a
                     href="#contact"
                     className="inline-flex items-center gap-2 rounded-full border border-paper/25 px-6 py-3 text-sm font-semibold text-paper transition-colors hover:bg-paper/10"
                   >
-                    Join the waitlist
+                    Write to the lab
                   </a>
                 </div>
-              </div>
-              <div className="rounded-2xl border border-paper/15 bg-paper/5 p-6">
-                <p className="font-display font-semibold">
-                  Get in before the crowd
-                </p>
-                <p className="mt-1 mb-4 text-sm text-paper/60">
-                  Waitlist members join the private beta first.
-                </p>
-                <WaitlistForm dark />
               </div>
             </div>
           </div>
@@ -102,7 +94,12 @@ export default function Projects() {
                 className="flex h-full flex-col rounded-3xl border border-ink/10 bg-card p-6 shadow-sm transition-shadow hover:shadow-lg hover:shadow-ink/5"
               >
                 <div className="flex items-start justify-between gap-2">
-                  <span className="text-4xl">{p.emoji}</span>
+                  {p.logo ? (
+                    // eslint-disable-next-line @next/next/no-img-element -- a small static SVG needs no optimisation
+                    <img src={p.logo} alt={`${p.title} logo`} width={40} height={40} className="h-10 w-10" />
+                  ) : (
+                    <span className="text-4xl">{p.emoji}</span>
+                  )}
                   <span className="rounded-full bg-ink/5 px-3 py-1 font-mono text-[11px] font-semibold tracking-wide text-ember-deep uppercase">
                     {p.status}
                   </span>
